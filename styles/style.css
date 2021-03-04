@@ -8,13 +8,16 @@
     --input-padding-x: 1.5rem;
     --input-padding-y: .75rem;
   }
+
+  .card-container {
+    width: 100%;
+  }
+
   .card-signin {
     border: 0;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  
-   
   }
   
   .card-signin .card-title {
@@ -22,15 +25,7 @@
     font-weight: 300;
     font-size: 1.5rem;
   }
-  
-  .card-signin .card-img-left {
-    width: 45%;
 
-    
-    background-size: cover;
-    z-index: 0;
-  }
-  
   .card-signin .card-body {
     padding: 2rem;
   }
@@ -49,15 +44,27 @@
   }
   
   .form-label-group {
-    position: relative;;
-    margin-bottom: 1rem;
-
+    margin-top: 10px;
+    position: relative;
   }
-  
+
+  .errorValHide {
+    visibility: hidden;
+    padding-left: 12px;
+    font-size: 13px;
+    color: darkred;
+  }
+
+  .errorValShow {
+    padding-left: 12px;
+    font-size: 13px;
+    color: darkred;
+  }
+
+
   .form-label-group input {
     height: auto;
     border-radius: 2rem;
-
   }
   
   .form-label-group>input,
@@ -113,7 +120,7 @@
     color: #777;
   }
   .imgblur{
-    background-image: url(img/oficina.jpg);
+    background-image: url(../img/oficina.jpg);
 
   background-position: center;
   background-repeat: no-repeat;
